@@ -1,0 +1,272 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-right: 20px;
+}
+
+/* Left links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-left:15px
+}
+
+.nav-links li {
+  margin-right: 40px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links a {  color: black;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007BFF;
+}
+
+
+/* Center logo */
+.logo {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin-right:320px;
+  margin-top: 30px;
+  
+}
+
+/* Right icons */
+.icons {
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-icons li {
+  margin-left: 40px;
+}
+
+.nav-icons a {
+  color: black;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.nav-icons a:hover {
+  color: #007BFF;
+}
+
+/* Hero Slider */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide .text {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 2em;
+  color:rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  color:#333;
+}
+.small-text{
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.text h1{
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+.desc{
+  max-width: 400px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6d6d6d;
+}
+button{
+  padding: 12px 25px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover{
+  background-color: #444;
+}
+
+/* Gallery */
+.gallery {
+  padding: 110px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.galleryh2 {
+  margin-top: -20px;
+  font-weight: 550;
+ margin-bottom: 20px;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.gallerysml-text {
+  margin-bottom: 70px;
+  color: #6d6d6d;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-hover {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.image-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.img1 {
+  opacity: 1;
+}
+
+.img2 {
+  opacity: 0;
+}
+
+.image-box:hover .img1 {
+  opacity: 0;
+}
+
+.image-box:hover .img2 {
+  opacity: 1;
+}
+.text2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #4a5f14;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px 0;
+}
+.text-overlay p{
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: -446px 0 0 0;
+
+}
+
+.text-overlay h3{
+  font-size: 40px;
+  margin: -20px 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 40px;
+}
+.text-overlay img{
+  margin: 0 0 0 0px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px 0;
+}
+.text-overlay2 p{
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: -446px 0 0 0;
+
+}
+
+.text-overlay2 h3{
+  font-size: 40px;
+  margin: -20px 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
+.text-overlay2 img{
+  margin: 0 0 0 170px;
+}
+.para1{
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: -446px 0 0 0;
+}
+
+
